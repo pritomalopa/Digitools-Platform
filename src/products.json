@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "AI Writing Pro",
+    "description": "Generate high-quality content, blogs, and marketing copy in seconds.",
+    "price": 29,
+    "period": "Mo",
+    "tag": "Best Seller",
+    "tagType": "badge-warning",
+    "features": ["Unlimited AI generations", "50+ writing templates", "Grammar checker"],
+    "icon": "writing_23274001.png"
+  },
+  {
+    "id": 2,
+    "name": "Design Templates Pack",
+    "description": "2000+ premium templates for social media and marketing materials.",
+    "price": 49,
+    "period": "One-Time",
+    "tag": "Popular",
+    "tagType": "badge-primary",
+    "features": ["2000+ templates", "Monthly updates", "Commercial license"],
+    "icon": "design tools.png"
+  },
+  {
+    "id": 3,
+    "name": "Premium Stock Assets",
+    "description": "Access millions of royalty-free photos, videos, and graphics.",
+    "price": 19,
+    "period": "Mo",
+    "tag": "New",
+    "tagType": "badge-accent",
+    "features": ["10M+ assets", "Commercial use", "No attribution"],
+    "icon": "portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Automation Toolkit",
+    "description": "Automate repetitive tasks and streamline your workflow with tools.",
+    "price": 79,
+    "period": "Mo",
+    "tag": "Popular",
+    "tagType": "badge-primary",
+    "features": ["50+ automations", "API access", "Custom workflows"],
+    "icon": "operation.png"
+  },
+  {
+    "id": 5,
+    "name": "Resume Builder Pro",
+    "description": "Create professional resumes and cover letters that land interviews.",
+    "price": 15,
+    "period": "One-Time",
+    "tag": "New",
+    "tagType": "badge-accent",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "writing_23274001.png"
+  },
+  {
+    "id": 6,
+    "name": "Social Media Content Kit",
+    "description": "Complete toolkit for creating engaging social media content.",
+    "price": 39,
+    "period": "Mo",
+    "tag": "Best Seller",
+    "tagType": "badge-warning",
+    "features": ["5000+ assets", "Scheduler included", "Analytics dashboard"],
+    "icon": "social-media.png"
+  }
+]

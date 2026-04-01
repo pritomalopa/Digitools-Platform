@@ -2,16 +2,22 @@ import React, { useState } from 'react';
 
 // Product Data Array
 const productsData = [
-  { id: 1, name: "AI Writing Pro", price: "29", type: "/Mo", icon: "writing_23274001.png", tag: "Best Seller", features: ["Unlimited AI generations", "50+ writing templates", "Grammar checker"] },
-  { id: 2, name: "Design Templates Pack", price: "49", type: "/One-Time", icon: "design tools.png", tag: "Popular", features: ["2000+ templates", "Monthly updates", "Commercial license"] },
+  { id: 1, name: "AI Writing Pro", price: "29", type: "/Mo", icon: "writing_2327400 1", tag: "Best Seller", features: ["Unlimited AI generations", "50+ writing templates", "Grammar checker"] },
+  { id: 2, name: "Design Templates Pack", price: "49", type: "/One-Time", icon: "design-tool.png", tag: "Popular", features: ["2000+ templates", "Monthly updates", "Commercial license"] },
   { id: 3, name: "Premium Stock Assets", price: "19", type: "/Mo", icon: "portfolio.png", tag: "New", features: ["10M+ assets", "Commercial use", "No attribution"] },
   { id: 4, name: "Automation Toolkit", price: "79", type: "/Mo", icon: "operation.png", tag: "Popular", features: ["50+ automations", "API access", "Custom workflows"] },
-  { id: 5, name: "Resume Builder Pro", price: "15", type: "/One-Time", icon: "writing_23274001.png", tag: "New", features: ["100+ templates", "ATS optimization", "Export to PDF"] },
+  { id: 5, name: "Resume Builder Pro", price: "15", type: "/One-Time", icon: "writing_2327400 1.png", tag: "New", features: ["100+ templates", "ATS optimization", "Export to PDF"] },
   { id: 6, name: "Social Media Content Kit", price: "39", type: "/Mo", icon: "social-media.png", tag: "Best Seller", features: ["5000+ assets", "Scheduler included", "Analytics dashboard"] }
 ];
 
 export default function App() {
   const [view, setView] = useState('products'); // 'products' or 'cart'
+  const [cart, setCart] = useState([]); // Cart-er state add kora hoyeche
+
+  // Product add korar function
+  const addToCart = (product) => {
+    setCart([...cart, product]); // Ager cart items + Notun item
+  };
 
   return (
     <div className="bg-[#F8FAFC] min-h-screen font-sans">
@@ -105,7 +111,7 @@ export default function App() {
               onClick={() => setView('cart')}
               className={`px-8 py-2.5 rounded-full font-bold transition-all cursor-pointer ${view === 'cart' ? 'bg-[#7C3AED] text-white' : 'text-slate-500 hover:text-[#7C3AED]'}`}
             >
-              Cart (0)
+              Cart ({cart.length})
             </button>
           </div>
         </div>
@@ -145,7 +151,10 @@ export default function App() {
                 ))}
               </div>
 
-              <button className="w-full bg-[#7C3AED] text-white py-4 rounded-xl font-bold hover:bg-[#6D28D9] transition-all cursor-pointer active:scale-95 shadow-lg shadow-purple-100">
+              <button 
+                onClick={() => addToCart(p)} // Click korle count barbe
+                className="w-full bg-[#7C3AED] text-white py-4 rounded-xl font-bold hover:bg-[#6D28D9] transition-all cursor-pointer active:scale-95 shadow-lg shadow-purple-100"
+              >
                 Buy Now
               </button>
             </div>
